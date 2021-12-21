@@ -1,0 +1,9 @@
+counter = 0
+for i in range (10000):
+    missing = (4 - len(str(i)))
+    num = '0'*missing+str(i)
+    a,b,c,d = num[0:4]
+    if int(a)+int(b) == int(c) + int(d):
+        counter +=1
+
+print (counter)
